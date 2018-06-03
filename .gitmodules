@@ -1,0 +1,9 @@
+[submodule ".janus/elm"]
+	path = .janus/elm
+	url = https://github.com/lambdatoast/elm.vim.git
+[submodule ".janus/vim-terraform"]
+	path = .janus/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
+[submodule ".janus/vim-tmux-navigator"]
+	path = .janus/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
