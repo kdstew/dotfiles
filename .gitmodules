@@ -7,3 +7,6 @@
 [submodule ".janus/vim-tmux-navigator"]
 	path = .janus/vim-tmux-navigator
 	url = git@github.com:christoomey/vim-tmux-navigator.git
+[submodule ".janus/vim-colors-solarized"]
+	path = .janus/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git

@@ -1,9 +1,9 @@
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
 
-source ~/my_setup/tmuxinator.bash
+#source ~/my_setup/tmuxinator.bash
 
 export EDITOR=vim
 
@@ -14,14 +14,14 @@ export PS1='\w\[\033[32m\]$(__git_ps1) \[\033[0m\]> '
 export GOPATH=$HOME/apps/go
 export PATH=$PATH:$GOPATH/bin
 
-alias dcc='docker-compose'
-alias dccr='docker-compose rm -f'
-alias dcr='docker-compose run --rm'
-alias dcb='docker-compose build --pull'
-alias dclean='docker rmi $(docker images -f "dangling=true" -q)'
-alias dprune='docker system prune'
+alias dcc='sudo docker-compose'
+alias dccr='sudo docker-compose rm -f'
+alias dcr='sudo docker-compose run --rm'
+alias dcb='sudo docker-compose build --pull'
+alias dclean='sudo docker rmi $(docker images -f "dangling=true" -q)'
+alias dprune='sudo docker system prune'
 
-export PATH=$PATH:/Users/kevin/apps/nicerest
+export PATH=$PATH:~/.local/bin:/Users/kevin/apps/nicerest
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
@@ -38,4 +38,4 @@ if [ -f ~/.npm.env ]; then
   source ~/.npm.env
 fi
 
-alias config='/usr/bin/git --git-dir=/Users/kevin/.cfg/ --work-tree=/Users/kevin'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME/'
